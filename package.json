@@ -1,0 +1,25 @@
+{
+  "name": "pptr-visual",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-snapshots": "jest --config=jest.config.js --detectOpenHandles --forceExit",
+    "test-snapshots-update": "jest --config=jest.config.js --updateSnapshot --detectOpenHandles --forceExit",
+    "test:percy": "percy exec -- jest -i ./tests-snapshots/__tests__/percy.test.js"
+  },
+  "keywords": [
+    "Puppeteer",
+    "Chai",
+    "Mocha"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@percy/cli": "^1.26.0",
+    "@percy/puppeteer": "^2.0.2",
+    "jest": "^29.5.0",
+    "jest-image-snapshot": "^6.1.0",
+    "puppeteer": "^20.5.0"
+  }
+}
